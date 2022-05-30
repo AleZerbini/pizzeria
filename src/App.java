@@ -9,5 +9,7 @@ public class App {
         Waiter garcom1 = new Waiter();
 
         garcom1.takeOrder();
+
+        System.out.println("Fim da demonstração.");
     }
 }
