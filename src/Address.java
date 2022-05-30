@@ -1,5 +1,3 @@
-package dominios;
-
 public class Address {
     private String street;
     private int number;
