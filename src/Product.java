@@ -10,4 +10,12 @@ public class Product {
         this.cost = new BigDecimal("0");
         this.price = BigDecimal.ZERO; //the same as above, just for the sake of learning
     }
+
+    public BigDecimal getCost() {
+        return cost;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
 }
