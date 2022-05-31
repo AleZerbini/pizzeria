@@ -20,6 +20,7 @@ public class Order {
         }else {
             delivery = false;
         }
+        this.table = table;
     }
 
     public Customer getCustomer() {

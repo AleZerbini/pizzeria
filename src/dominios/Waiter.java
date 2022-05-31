@@ -8,6 +8,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Waiter extends Person {
+    private String password;
+
+    public Waiter(String cpf, String password, String name) {
+        this.password = password;
+        super.cpf = cpf;
+        super.name = name;
+    }
 
     public void takeOrder() {
         Scanner scanner = new Scanner(System.in);
@@ -38,5 +45,13 @@ public class Waiter extends Person {
         System.out.println(order);
         System.out.println("Pedido criado!");
 
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

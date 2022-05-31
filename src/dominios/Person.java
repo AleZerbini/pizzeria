@@ -1,6 +1,6 @@
 package dominios;
 
-public class Person {
+public abstract class Person {
     protected String name;
     protected String surname;
     protected String cpf;
