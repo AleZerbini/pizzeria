@@ -7,7 +7,7 @@ import jdk.jshell.PersistentSnippet;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Admin {
+public abstract class Admin {
 
     private static ArrayList<Waiter> employees;
 
@@ -20,14 +20,16 @@ public class Admin {
         employees.add(new Waiter("111", "123", "Pedro"));
     }
 
-    public static Waiter login(String cpf, String senha) {
+    public static Waiter login(String cpf, String senha) throws Exception{
         for (Waiter employee : employees){
             if (employee.getCpf().equals(cpf)){
                 if (employee.getPassword().equals(senha)){
                     return employee;
+                }else{
+                    throw new Exception("Senha invalida, tente novamente");
                 }
             }
         }
-        return null;
+        throw new Exception("Usuario nao encontrado.");
     }
 }

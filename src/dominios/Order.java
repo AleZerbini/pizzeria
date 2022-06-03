@@ -51,4 +51,12 @@ public class Order {
         ret += "___FIM DO PEDIDO___"+"\n";
         return ret;
     }
+
+    public int getTable() {
+        return table;
+    }
+
+    public void setTable(int table) {
+        this.table = table;
+    }
 }

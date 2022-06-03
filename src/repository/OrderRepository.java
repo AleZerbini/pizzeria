@@ -5,7 +5,7 @@ import dominios.Order;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class OrderRepository {
+public abstract class OrderRepository {
     private static ArrayList<Order> orders;
     public OrderRepository() {
     }
@@ -15,5 +15,18 @@ public class OrderRepository {
             orders = new ArrayList<>();
         }
         orders.add(order);
+    }
+
+    public static ArrayList<Order> getOrdersByTable(Integer table){
+        ArrayList<Order> filteredOrders = new ArrayList<>();
+        for (Order order:orders){
+            if(order.getTable() == table){
+                filteredOrders.add(order);
+            }
+        }
+        if (filteredOrders.isEmpty()){
+            return  null;
+        }
+        return filteredOrders;
     }
 }
