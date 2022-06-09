@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class ProductRepository {
+public abstract class ProductRepository {
 
     private static ArrayList<Pizza> pizzas;
     private static ArrayList<Product> beverages;

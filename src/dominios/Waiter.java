@@ -7,7 +7,7 @@ import repository.ProductRepository;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Waiter extends Person {
+public class Waiter extends Person implements Employee{
     private String password;
 
     public Waiter(String cpf, String password, String name) {
@@ -44,6 +44,31 @@ public class Waiter extends Person {
         OrderRepository.addOrder(order);
         System.out.println(order);
         System.out.println("Pedido criado!");
+
+    }
+
+    public void showTable(){
+        Scanner scanner = new Scanner(System.in);
+        Integer table = null;
+        do{
+            System.out.println("Informe o numero da mesa que deseja consultar");
+            try{
+                table = Integer.parseInt(scanner.nextLine());
+            }catch (Exception e){
+                System.err.println("Numero de mesa invalido!");
+            }
+        }while (table == null);
+        ArrayList<Order> orders = OrderRepository.getOrdersByTable(table);
+        if (orders != null) {
+            System.out.println("Mesa "+table+"\n"+"Itens:");
+            for (Order order: orders){
+                for(Product product : order.getItems()){
+                    System.out.println(product.getTitle());
+                }
+            }
+        }else {
+            System.out.println("Sem pedidos para essa mesa");
+        }
 
     }
 

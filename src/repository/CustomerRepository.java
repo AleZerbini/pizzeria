@@ -5,7 +5,7 @@ import dominios.Customer;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class CustomerRepository {
+public abstract class CustomerRepository {
     private static ArrayList<Customer> customers;
     public CustomerRepository() {
     }
