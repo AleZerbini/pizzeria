@@ -13,6 +13,12 @@ public class Product {
         this.price = price;
     }
 
+    public Product(String title){
+        this.title = title;
+        this.cost = new BigDecimal("0");
+        this.price = BigDecimal.ZERO; //same as above, just for the sake of learning
+    }
+
     public String getTitle() {
         return title;
     }
