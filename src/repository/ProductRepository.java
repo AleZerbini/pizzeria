@@ -1,8 +1,7 @@
 package repository;
 
-import dominios.Customer;
-import dominios.Pizza;
-import dominios.Product;
+import domain.Pizza;
+import domain.Product;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

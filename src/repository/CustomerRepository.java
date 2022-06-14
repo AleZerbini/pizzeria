@@ -1,6 +1,6 @@
 package repository;
 
-import dominios.Customer;
+import domain.Customer;
 
 import java.util.ArrayList;
 import java.util.Objects;

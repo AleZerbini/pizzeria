@@ -1,6 +1,6 @@
 package repository;
 
-import dominios.Order;
+import domain.Order;
 
 import java.util.ArrayList;
 import java.util.Objects;

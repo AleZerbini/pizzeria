@@ -1,6 +1,6 @@
 package screens;
 
-import dominios.Waiter;
+import domain.Waiter;
 import repository.Admin;
 
 import java.util.Scanner;

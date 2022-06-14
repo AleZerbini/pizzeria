@@ -1,11 +1,4 @@
-package dominios;
-
-import repository.CustomerRepository;
-import repository.OrderRepository;
-import repository.ProductRepository;
-
-import java.util.ArrayList;
-import java.util.Scanner;
+package domain;
 
 public class Waiter extends Person{
     private String password;

@@ -1,4 +1,4 @@
-package dominios;
+package domain;
 
 public interface Employee {
 
