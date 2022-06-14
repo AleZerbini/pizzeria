@@ -1,5 +1,9 @@
-package dominios;
+package services;
 
+import domain.Customer;
+import domain.Order;
+import domain.Product;
+import domain.Waiter;
 import repository.CustomerRepository;
 import repository.OrderRepository;
 import repository.ProductRepository;
@@ -7,16 +11,9 @@ import repository.ProductRepository;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Waiter extends Person implements Employee{
-    private String password;
+public class Dining {
 
-    public Waiter(String cpf, String password, String name) {
-        this.password = password;
-        super.cpf = cpf;
-        super.name = name;
-    }
-
-    public void takeOrder() {
+    public static void takeOrder(Waiter waiter) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Informe a mesa que deseja fazer pedido, ou 0 para delivery:");
@@ -47,7 +44,7 @@ public class Waiter extends Person implements Employee{
 
     }
 
-    public void showTable(){
+    public static void showTable(Waiter waiter){
         Scanner scanner = new Scanner(System.in);
         Integer table = null;
         do{
@@ -72,11 +69,4 @@ public class Waiter extends Person implements Employee{
 
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

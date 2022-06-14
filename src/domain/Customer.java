@@ -1,4 +1,4 @@
-package dominios;
+package domain;
 
 public class Customer extends Person {
     private Address address;

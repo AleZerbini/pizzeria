@@ -1,8 +1,6 @@
 package repository;
 
-import dominios.Customer;
-import dominios.Waiter;
-import jdk.jshell.PersistentSnippet;
+import domain.Waiter;
 
 import java.util.ArrayList;
 import java.util.Objects;

@@ -1,6 +1,8 @@
 package screens;
 
-import dominios.Waiter;
+import domain.Waiter;
+import services.ShowTable;
+import services.TakeOrder;
 
 import java.util.Scanner;
 
@@ -17,10 +19,10 @@ public class EmployeeScreen {
             option = scanner.nextLine();
             switch (option) {
                 case "1":
-                    waiter.takeOrder();
+                    TakeOrder.execute(waiter);
                     break;
                 case "2":
-                    waiter.showTable();
+                    ShowTable.execute(waiter);
                     break;
                 case "3":
                     System.out.println("Em desenvolvimento...");
