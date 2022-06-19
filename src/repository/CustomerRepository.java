@@ -1,3 +1,5 @@
+// deletar
+
 package repository;
 
 import domain.Customer;
@@ -5,7 +7,7 @@ import domain.Customer;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public abstract class CustomerRepository {
+public class CustomerRepository extends Repository { //vamos tirar os customers (porque aqui era de delivery)
     private static ArrayList<Customer> customers;
     public CustomerRepository() {
     }

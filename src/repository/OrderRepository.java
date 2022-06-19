@@ -5,7 +5,7 @@ import domain.Order;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public abstract class OrderRepository {
+public class OrderRepository extends Repository {
     private static ArrayList<Order> orders;
     public OrderRepository() {
     }

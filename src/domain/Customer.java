@@ -1,6 +1,6 @@
 package domain;
 
-public class Customer extends Person {
+public class Customer extends Person { //ignorar tambem
     private Address address;
     private String cellphone;
 

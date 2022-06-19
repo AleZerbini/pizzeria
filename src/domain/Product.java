@@ -6,6 +6,7 @@ public class Product {
     protected String title;
     protected BigDecimal cost;
     protected BigDecimal price;
+    protected Integer quantity;
 
     public Product(String title, BigDecimal cost, BigDecimal price) {
         this.title = title;
@@ -18,6 +19,12 @@ public class Product {
         this.cost = new BigDecimal("0");
         this.price = BigDecimal.ZERO; //same as above, just for the sake of learning
     }
+
+    public Product(String title, Integer quantity){
+        this.title = title;
+        this.quantity = quantity;
+    }
+
 
     public String getTitle() {
         return title;
@@ -42,4 +49,17 @@ public class Product {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQua(BigDecimal price) {
+        this.price = price;
+    }
+
+
+
+
+
 }
