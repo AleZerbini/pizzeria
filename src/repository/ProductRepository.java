@@ -1,3 +1,4 @@
+/*
 package repository;
 
 import domain.Pizza;
@@ -12,8 +13,6 @@ public class ProductRepository extends Repository{
     private static ArrayList<Pizza> pizzas;
     private static ArrayList<Product> beverages;
     private static ArrayList<Product> desserts;
-
-
 
     public static void populateForTest(){
         if (Objects.isNull(beverages)){
@@ -33,3 +32,4 @@ public class ProductRepository extends Repository{
         return null;
     }
 }
+*/

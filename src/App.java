@@ -1,8 +1,6 @@
 import domain.Customer;
 import domain.Product;
 import repository.Admin;
-import repository.CustomerRepository;
-import repository.ProductRepository;
 import repository.Repository;
 import screens.StandBy;
 
@@ -12,11 +10,9 @@ public class App {
     public static void main(String[] args) {
 //        Repository <Customer> customerRepository = new Repository<>();
 //        Repository <Product> productRepository = new Repository<>();
+//        CustomerRepository.populateForTest();
+//        ProductRepository.populateForTest();
 
-
-
-        CustomerRepository.populateForTest();
-        ProductRepository.populateForTest();
         Admin.populateForTest();
 
         //Waiter garcom1 = new Waiter("666", "123");

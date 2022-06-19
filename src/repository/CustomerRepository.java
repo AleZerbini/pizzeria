@@ -1,5 +1,4 @@
-// deletar
-
+/*
 package repository;
 
 import domain.Customer;
@@ -35,3 +34,4 @@ public class CustomerRepository extends Repository { //vamos tirar os customers 
 
 
 }
+*/
