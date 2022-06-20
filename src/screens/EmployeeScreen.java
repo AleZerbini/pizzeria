@@ -1,7 +1,6 @@
-/*
 package screens;
 
-import domain.Waiter;
+import domains.Employee;
 import services.ShowTable;
 import services.TakeOrder_old;
 
@@ -9,10 +8,10 @@ import java.util.Scanner;
 
 public class EmployeeScreen {
 
-    public static void openScreen(Scanner scanner, Waiter waiter) {
+    public static void init(Scanner scanner, Employee employee) {
         String option = "";
         do {
-            System.out.println("-------------------------");
+            System.out.println("----------------------------------");
             System.out.println("Digite 1 para fazer um pedido.");
             System.out.println("Digite 2 para consultar uma mesa.");
             System.out.println("Digite 3 para fechar uma conta.");
@@ -20,10 +19,10 @@ public class EmployeeScreen {
             option = scanner.nextLine();
             switch (option) {
                 case "1":
-                    TakeOrder_old.execute(waiter);
+                    TakeOrder_old.execute(employee);
                     break;
                 case "2":
-                    ShowTable.execute(waiter);
+                    ShowTable.execute(employee);
                     break;
                 case "3":
                     System.out.println("Em desenvolvimento...");
@@ -34,4 +33,4 @@ public class EmployeeScreen {
         } while (!option.equals("0"));
     }
 
-}*/
+}

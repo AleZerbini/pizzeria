@@ -44,9 +44,9 @@ public class Repository {
 */
 
     // Getters
-    Set<Product> getMenu() { return menu; }
-    Set<Employee> getEmployees() { return employees; }
-    List<Order> getOrders() { return orders; }
+    public Set<Product> getMenu() { return menu; }
+    public Set<Employee> getEmployees() { return employees; }
+    public List<Order> getOrders() { return orders; }
 
     // Setters
     void setMenu(Set<Product> menu) { this.menu = menu; }

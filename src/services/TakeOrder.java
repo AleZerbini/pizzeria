@@ -1,17 +1,16 @@
-package services;
 /*
+package services;
+
 import domain.Order;
 import domain.Product;
 import domain.TablesManager;
-import domain.Waiter;
-import repository.OrderRepository;
-import repository.ProductRepository;
+import domains.Employee;
 import repository.Repository;
 
 import java.util.*;
 
 public class TakeOrder {
-    public static void execute(Waiter waiter) {
+    public static void execute(Employee employee) {
         Scanner scanner = new Scanner(System.in);
 
         Integer mesa = 0;
@@ -42,7 +41,8 @@ public class TakeOrder {
             //criar funcao pra pegar nome de produto a partir do identificador
 
 
-            /* System.out.printf("Informe a quantidade de %s: ", productName;
+            */
+/* System.out.printf("Informe a quantidade de %s: ", productName;
             Integer productQty = scanner.nextInt());
 
             if (order.containsValue(productName)) {
@@ -63,5 +63,4 @@ public class TakeOrder {
         scanner.close();
 
     }
-}
-*/
+}*/

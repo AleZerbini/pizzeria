@@ -7,4 +7,6 @@ public class Employee extends Person{
         super(name, surname, cpf);
         this.account = account;
     }
+
+    public Account getAccount() { return account; }
 }

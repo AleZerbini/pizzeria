@@ -1,8 +1,9 @@
 package services;
-/*
+
 import domain.Order;
 import domain.Product;
 import domain.Waiter;
+import domains.Employee;
 import repository.OrderRepository;
 import repository.Repository;
 
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ShowTable {
-    public static void execute (Waiter waiter) {
+    public static void execute (Employee employee) {
         Scanner scanner = new Scanner(System.in);
         Integer table = null;
         do {
@@ -36,4 +37,3 @@ public class ShowTable {
 
     }
 }
-*/
