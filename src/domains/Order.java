@@ -10,21 +10,11 @@ public class Order {
     private ArrayList<Product> items;
     private BigDecimal total;
 
-    //private boolean delivery;
-//    private Customer customer;
 
     public Order(int table) {
         this.placement = LocalDateTime.now();
         this.table = table;
     }
-
-//    public Customer getCustomer() {
-//        return customer;
-//    }
-//
-//    public void setCustomer(Customer customer) {
-//        this.customer = customer;
-//    }
 
     public ArrayList<Product> getItems() {
         return items;

@@ -1,10 +1,8 @@
 package services;
 
-import domain.Order;
-import domain.Product;
-import domain.Waiter;
 import domains.Employee;
-import repository.OrderRepository;
+import domains.Order;
+import domains.Product;
 import repository.Repository;
 
 import java.util.ArrayList;
