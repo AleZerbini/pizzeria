@@ -1,12 +1,13 @@
-package domain;
+package domains;
 
 import java.math.BigDecimal;
 
 public class Product {
-    protected String title;
-    protected String id;
+    public String title;
+    public String id;
     protected BigDecimal cost;
     protected BigDecimal price;
+    protected ProductType type;
 
 //    public Product(String title, BigDecimal cost, BigDecimal price) {
 //        this.title = title;
@@ -17,15 +18,17 @@ public class Product {
     public Product(String title, String id){
         this.title = title;
         this.id = id;
-        this.cost = new BigDecimal("0");
-        this.price = BigDecimal.ZERO; //same as above, just for the sake of learning
+        this.cost = BigDecimal.ZERO;
+        this.price = BigDecimal.ZERO;
+        this.type = ProductType.OTHER;
     }
 
-    public Product(String title, String id, BigDecimal cost, BigDecimal price) {
+    public Product(String title, String id, BigDecimal cost, BigDecimal price, ProductType type) {
         this.title = title;
         this.id = id;
         this.cost = cost;
         this.price = price;
+        this.type = type;
     }
 
     @Override
@@ -43,10 +46,10 @@ public class Product {
         return id != null ? id.hashCode() : 0;
     }
 
+
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -54,7 +57,6 @@ public class Product {
     public BigDecimal getCost() {
         return cost;
     }
-
     public void setCost(BigDecimal cost) {
         this.cost = cost;
     }
@@ -62,12 +64,10 @@ public class Product {
     public BigDecimal getPrice() {
         return price;
     }
-
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
     public String getId() { return id; }
-
     public void setId(String id) { this.id = id; }
 }

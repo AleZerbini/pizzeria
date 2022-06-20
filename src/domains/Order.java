@@ -1,4 +1,4 @@
-package domain;
+package domains;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -15,12 +15,7 @@ public class Order {
 
     public Order(int table) {
         this.placement = LocalDateTime.now();
-//        if (table == 0){
-//            delivery = true;
-//        }else {
-//            delivery = false;
-//        }
-//        this.table = table;
+        this.table = table;
     }
 
 //    public Customer getCustomer() {

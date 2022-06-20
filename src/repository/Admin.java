@@ -1,25 +1,17 @@
+/*
 package repository;
 
-import domain.Waiter;
+import domains.Employee;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public abstract class Admin {
 
-    private static ArrayList<Waiter> employees;
+    private static ArrayList<Employee> employees;
 
-    public static void populateForTest(){
-        if (Objects.isNull(employees)){
-            employees = new ArrayList<>();
-        }
-        employees.add(new Waiter("666", "678", "Jorge"));
-        employees.add(new Waiter("333", "345", "Maria"));
-        employees.add(new Waiter("111", "123", "Pedro"));
-    }
 
-    public static Waiter login(String cpf, String senha) throws Exception{
-        for (Waiter employee : employees){
+    public static Employee login(String cpf, String senha) throws Exception{
+        for (Employee employee : employees){
             if (employee.getCpf().equals(cpf)){
                 if (employee.getPassword().equals(senha)){
                     return employee;
@@ -31,3 +23,4 @@ public abstract class Admin {
         throw new Exception("Usuario nao encontrado.");
     }
 }
+*/
