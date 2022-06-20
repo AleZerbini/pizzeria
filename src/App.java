@@ -1,7 +1,10 @@
-import domain.Customer;
+/*
+//import domain.Customer;
 import domain.Product;
+import domain.TablesManager;
 import repository.Admin;
 import repository.Repository;
+import repository.Test;
 import screens.StandBy;
 
 import java.util.Scanner;
@@ -14,6 +17,9 @@ public class App {
 //        ProductRepository.populateForTest();
 
         Admin.populateForTest();
+        Test.populate();
+
+        TablesManager.init();
 
         //Waiter garcom1 = new Waiter("666", "123");
         //garcom1.takeOrder();

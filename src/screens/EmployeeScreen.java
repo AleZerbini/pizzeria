@@ -2,7 +2,7 @@ package screens;
 
 import domain.Waiter;
 import services.ShowTable;
-import services.TakeOrder;
+import services.TakeOrder_old;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ public class EmployeeScreen {
             option = scanner.nextLine();
             switch (option) {
                 case "1":
-                    TakeOrder.execute(waiter);
+                    TakeOrder_old.execute(waiter);
                     break;
                 case "2":
                     ShowTable.execute(waiter);

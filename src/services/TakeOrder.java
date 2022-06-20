@@ -1,43 +1,57 @@
 package services;
-
-import domain.Customer;
+/*
 import domain.Order;
 import domain.Product;
+import domain.TablesManager;
 import domain.Waiter;
-import repository.CustomerRepository;
 import repository.OrderRepository;
 import repository.ProductRepository;
+import repository.Repository;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class TakeOrder {
-    public static void execute (Waiter waiter) {
+    public static void execute(Waiter waiter) {
         Scanner scanner = new Scanner(System.in);
 
-        //System.out.println("Informe a mesa que deseja fazer pedido, ou 0 para delivery:");
+        Integer mesa = 0;
+        do {
+            System.out.println("Informe a mesa que deseja fazer pedido");
+            mesa = Integer.parseInt(scanner.nextLine());
+        } while (mesa < 1 || mesa > TablesManager.getTablesLimit());
 
-        //fazer tratamento de erro para outras entradas que nao sejam Integer
-        System.out.println("Informe a mesa que deseja fazer pedido");
-        Integer mesa = Integer.parseInt(scanner.nextLine());
+        if (Objects.isNull(TablesManager.tableStatus.get(mesa))) {
+            TablesManager.tableStatus.put(mesa, new HashMap<>());
+        }
+
         Order order = new Order(mesa);
 
-//        System.out.println("Informe o CPF do cliente:");
-//        String cpf = scanner.nextLine();
-//        Customer customer = CustomerRepository.getCustomer(cpf);
-//        order.setCustomer(customer);
-
-        ArrayList<Product> items = new ArrayList<>();
         String temp = "";
         do {
             System.out.println("Informe o produto a acrescentar no pedido, ou 0 para finalizar:");
-            // print menu with indexes to simplify input
-            // verificar se input corresponde a indice existente
+            //showMenu.print(); //print whole menu with ID
+            // * verificar se input corresponde ao indice existente
             temp = scanner.nextLine();
             if (temp.equals("0")) {
                 continue;
             }
-            items.add(ProductRepository.getProduct(temp));
+
+            Map<String, Integer> order = TablesManager.tableOrders(mesa);
+            //Repository.getInstance().menu.equals()
+            //String productName = ;
+            //criar funcao pra pegar nome de produto a partir do identificador
+
+
+            /* System.out.printf("Informe a quantidade de %s: ", productName;
+            Integer productQty = scanner.nextInt());
+
+            if (order.containsValue(productName)) {
+                int newQty = order.get(productName) + productQty;
+                order.put(productName, newQty);
+            } else {
+                order.put(productName, productQty);
+            }
+
         } while (!temp.equals("0"));
 
         order.setItems(items);
@@ -46,5 +60,8 @@ public class TakeOrder {
         System.out.println(order);
         System.out.println("Pedido criado!");
 
+        scanner.close();
+
     }
 }
+*/

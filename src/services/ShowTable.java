@@ -1,5 +1,5 @@
 package services;
-
+/*
 import domain.Order;
 import domain.Product;
 import domain.Waiter;
@@ -20,7 +20,8 @@ public class ShowTable {
                 System.err.println("Numero de mesa invalido!");
             }
         } while (table == null);
-        ArrayList<Order> orders = OrderRepository.getOrdersByTable(table);
+
+        ArrayList<Order> orders = Repository.getInstance().getOrders().getOrdersByTable(table);
         if (orders != null) {
             System.out.println("Mesa " + table + "\n" + "Itens:");
             for (Order order : orders) {
@@ -34,3 +35,4 @@ public class ShowTable {
 
     }
 }
+*/

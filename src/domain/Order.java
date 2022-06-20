@@ -11,7 +11,7 @@ public class Order {
     private BigDecimal total;
 
     //private boolean delivery;
-    private Customer customer;
+//    private Customer customer;
 
     public Order(int table) {
         this.placement = LocalDateTime.now();
@@ -43,10 +43,10 @@ public class Order {
     public String toString() {
         String ret = "";
         ret = "Mesa = " + this.table + "\n";
-        ret += "Cliente = " + this.customer.getName() + "\n";
+//        ret += "Cliente = " + this.customer.getName() + "\n";
         ret += "Produtos: " + "\n";
         for (Product product : items) {
-            ret += product.getQuantity() + " ";
+//            ret += product.getQuantity() + " ";
             ret += product.getTitle() + "\n";
         }
         ret += "___FIM DO PEDIDO___" + "\n";

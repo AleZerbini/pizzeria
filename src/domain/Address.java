@@ -1,6 +1,7 @@
+/* // deletar enquanto nao tiver delivery
 package domain;
 
-public class Address {  // deletar enquanto nao tiver delivery
+public class Address {
     private String street;
     private int number;
     private String complement;
@@ -9,3 +10,4 @@ public class Address {  // deletar enquanto nao tiver delivery
     private String state;
     private String zipCode;
 }
+*/
