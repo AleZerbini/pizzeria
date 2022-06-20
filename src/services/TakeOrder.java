@@ -1,13 +1,14 @@
-/*
+
 package services;
 
-import domain.Order;
-import domain.Product;
-import domain.TablesManager;
 import domains.Employee;
-import repository.Repository;
+import domains.Order;
+import domains.TablesManager;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Scanner;
 
 public class TakeOrder {
     public static void execute(Employee employee) {
@@ -35,21 +36,21 @@ public class TakeOrder {
                 continue;
             }
 
-            Map<String, Integer> order = TablesManager.tableOrders(mesa);
+            Map<String, Integer> pedido = TablesManager.tableOrders(mesa);
             //Repository.getInstance().menu.equals()
-            //String productName = ;
+            String productName;
             //criar funcao pra pegar nome de produto a partir do identificador
 
 
-            */
-/* System.out.printf("Informe a quantidade de %s: ", productName;
-            Integer productQty = scanner.nextInt());
 
-            if (order.containsValue(productName)) {
-                int newQty = order.get(productName) + productQty;
-                order.put(productName, newQty);
+ System.out.printf("Informe a quantidade de %s: ", productName);
+            Integer productQty = scanner.nextInt();
+
+            if (pedido.containsValue(productName)) {
+                int newQty = pedido.get(productName) + productQty;
+                pedido.put(productName, newQty);
             } else {
-                order.put(productName, productQty);
+                pedido.put(productName, productQty);
             }
 
         } while (!temp.equals("0"));
@@ -63,4 +64,4 @@ public class TakeOrder {
         scanner.close();
 
     }
-}*/
+}

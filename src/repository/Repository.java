@@ -15,7 +15,7 @@ public class Repository {
     // Singleton sctructure
     private static Repository repository;
     private Repository() {
-        this.menu = new HashSet<>();
+        this.menu = new HashSet<>(); //key: String Id, value: String Nome
         this.employees = new HashSet<>();
         this.orders = new ArrayList<>();
     }

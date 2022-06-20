@@ -1,16 +1,15 @@
-/*
+
 package services;
 
-import domain.Order;
-import domain.Product;
-import domain.Waiter;
-import repository.OrderRepository;
+import domains.Employee;
+import domains.Order;
+import domains.Product;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TakeOrder_old {
-    public static void execute (Waiter waiter) {
+    public static void execute (Employee waiter) {
         Scanner scanner = new Scanner(System.in);
 
         //System.out.println("Informe a mesa que deseja fazer pedido, ou 0 para delivery:");
@@ -55,4 +54,4 @@ public class TakeOrder_old {
 
     }
 }
-*/
+
