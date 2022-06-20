@@ -1,3 +1,4 @@
+/*
 package screens;
 
 import domain.Waiter;
@@ -38,3 +39,4 @@ public class StandBy {
         }
     }
 }
+*/

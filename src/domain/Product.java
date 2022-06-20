@@ -14,8 +14,9 @@ public class Product {
 //        this.price = price;
 //    }
 
-    public Product(String title){
+    public Product(String title, String id){
         this.title = title;
+        this.id = id;
         this.cost = new BigDecimal("0");
         this.price = BigDecimal.ZERO; //same as above, just for the sake of learning
     }

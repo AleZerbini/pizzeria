@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Set;
 
 public class Repository {
-    Set<Product> menu;
-    Set<Person> employees;
-    List<Order> orders;
+    private Set<Product> menu;
+    private Set<Person> employees;
+    private List<Order> orders;
 
 //    Set<Customer> customers;
 
@@ -22,6 +22,18 @@ public class Repository {
         if (repository == null)
             repository = new Repository();
         return repository;
+    }
+
+    public Set<Product> getMenu() {
+        return menu;
+    }
+
+    public Set<Person> getEmployees() {
+        return employees;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
     }
 }
 

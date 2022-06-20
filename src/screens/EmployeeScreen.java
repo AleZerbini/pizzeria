@@ -1,3 +1,4 @@
+/*
 package screens;
 
 import domain.Waiter;
@@ -33,4 +34,4 @@ public class EmployeeScreen {
         } while (!option.equals("0"));
     }
 
-}
+}*/

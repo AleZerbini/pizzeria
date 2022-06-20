@@ -33,4 +33,9 @@ public abstract class Test {
         Collections.addAll(Repository.getInstance().getMenu(), pizzas);
         Collections.addAll(Repository.getInstance().getMenu(), products);
     }
+
+    public static void main(String[] args) {
+        populate();
+        System.out.println(Repository.getInstance().getMenu().toString());
+    }
 }
